@@ -1,0 +1,93 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  h1 {
+    font-size: 50px;
+  }
+  text-align: center;
+  margin: 0px auto;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+}
+
+.goTo{
+  a{
+    text-decoration: none;
+  }
+  margin-top: 45px;
+  display: flex;
+  gap: 10px;
+.btn{
+    color: #fff;
+    width: 290px;
+    height: 55px;
+    display: inline-block;
+    max-width: 100%;
+    padding: 16px 25px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-size: 100%;
+    color: #fff;
+    border-radius: 1px;
+}
+
+.charts{
+  border: 1px solid orange;
+  color: #f7951e;
+}
+
+.contacts{
+  &:hover{
+    background-color: #F9A136;;
+  }
+  background: #FF9500;
+}
+}
+
+.app-header {
+
+  img{
+    width: 132px;
+    height: 29px;
+  }
+  .profile-img {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+  }
+  .container {
+    nav {
+      a {
+        text-decoration-color: #f7951e;
+        &:hover{
+        text-underline-offset: 6px;
+        }
+        font-size: 20px;
+      }
+      display: flex;
+      gap: 25px;
+    }
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    h1 {
+      cursor: pointer;
+    }
+  }
+}
+
+.background {
+  background-image: url('../../imgs//overview-bg.png');
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
