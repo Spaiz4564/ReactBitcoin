@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 
 export default function TransferFund({ contact, onTransferCoins }) {
-  const [amount, setAmount] = useState(0)
+  const [amount, setAmount] = useState('')
 
   function onSetAmount({ target }) {
     setAmount(target.value)
@@ -35,19 +35,3 @@ setAmount('')
   )
 }
 
-// export default class TransferFund extends Component {
-
-//   onTransfer = ev => {
-//     ev.preventDefault()
-//     userService.transfrerCoins(this.props.contact, this.state.amount)
-//     this.setState(({ amount: '' }))
-//   }
-
-//   render() {
-//     const { name } = this.props.contact
-//     const { amount } = this.state
-//     return (
-
-//     )
-//   }
-// }

@@ -21,23 +21,22 @@ export class UserProfile extends Component {
     })
   }
 
-  get Moves() {
-return 
-  }
-
   render() {
     const { loggedInUser, coins } = this.state
     if (!loggedInUser) return <div>Loading...</div>
     return (
       <>
         <section className='user-profile'>
-          <h1>Hello {loggedInUser.name}!</h1>
-          <h2>Coins: {loggedInUser.coins}</h2>
-          <h3>
-            <img src={require(`../assets/imgs/currency.png`)} alt='' />
-            BTC: {coins}
-          </h3>
-          <MovesList  />
+          <section className='user-info'>
+            <h1>Hello {loggedInUser.name}!</h1>
+            <h2>Coins: {loggedInUser.coins}</h2>
+            <h3>
+              <img src={require(`../assets/imgs/currency.png`)} alt='' />
+              BTC: {coins}
+            </h3>
+          </section>
+
+          <MovesList moves={loggedInUser.moves} />
         </section>
       </>
     )

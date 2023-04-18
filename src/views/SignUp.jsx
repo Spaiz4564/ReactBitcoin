@@ -24,14 +24,13 @@ export class SignUp extends Component {
     const { name } = this.state.userToEdit
     return (
       <section className='sign-up'>
-       <h1>Signup</h1>
+       <h1>Sign Up</h1>
         <form onSubmit={this.onSignUp}>
           <label htmlFor='name'>
             Username:{' '}
             <input
               onChange={this.handleChange}
               value={name}
-              placeholder='username'
               name='name'
               type='text'
               id='name'

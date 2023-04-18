@@ -1,6 +1,7 @@
 import { storageService } from './storage.service'
 import { makeDate } from './util.service'
 
+
 export const userService = {
   getUser,
   signup,
@@ -34,7 +35,7 @@ function transferCoins(contact, amount) {
     toId: contact._id,
     to: contact.name,
     at: makeDate(),
-    amount,
+    amount: +amount
   }
   const user = getUser()
   if (user.coins >= amount) {
