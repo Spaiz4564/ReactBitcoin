@@ -1,49 +1,36 @@
 import React, { Component } from 'react'
 import { ContactList } from '../cmps/ContactList'
+import { connect } from 'react-redux'
 import { ContactFilter } from '../cmps/ContactFilter'
-import { contactService } from '../services/contactService'
 import { Link } from 'react-router-dom'
+import {
+  loadContacts,
+  removeContact,
+  setFilterBy,
+} from '../store/actions/contact.actions'
 
-export class ContactPage extends Component {
-  state = {
-    contacts: null,
-    showDetails: false,
-    selectedContactId: null,
-    filterBy: {
-      name: '',
-    },
-  }
-
-  onChangeFilter = filterBy => {
-    this.setState({ filterBy: { ...filterBy } }, this.loadContacts)
-  }
-
-  loadContacts = async () => {
-    try {
-      const contacts = await contactService.getContacts(this.state.filterBy)
-      this.setState({ contacts })
-    } catch (err) {
-      console.log(err)
-    }
-  }
+export class _ContactPage extends Component {
 
   componentDidMount() {
-    this.loadContacts()
+    this.props.loadContacts()
   }
+
 
   onRemoveContact = async contactId => {
     try {
-      await contactService.deleteContact(contactId)
-      this.setState(({ contacts }) => ({
-        contacts: contacts.filter(contact => contact._id !== contactId),
-      }))
+      await await this.props.removeContact(contactId)
     } catch (error) {
       console.log('error:', error)
     }
   }
 
+  onChangeFilter = filterBy => {
+    this.props.setFilterBy(filterBy)
+    this.props.loadContacts()
+  }
+
   render() {
-    const { filterBy, contacts } = this.state
+    const { filterBy, contacts } = this.props
     return (
       <>
         <div className='filter-add-contact'>
@@ -64,3 +51,19 @@ export class ContactPage extends Component {
     )
   }
 }
+
+const mapStateToProps = state => ({
+  contacts: state.contactModule.contacts,
+  filterBy: state.contactModule.filterBy,
+})
+
+const mapDispatchToProps = {
+  loadContacts,
+  removeContact,
+  setFilterBy,
+}
+
+export const ContactPage = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(_ContactPage)

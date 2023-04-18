@@ -22,20 +22,7 @@
   margin-top: 45px;
   display: flex;
   gap: 10px;
-.btn{
-    color: #fff;
-    width: 290px;
-    height: 55px;
-    display: inline-block;
-    max-width: 100%;
-    padding: 16px 25px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    font-weight: 600;
-    font-size: 100%;
-    color: #fff;
-    border-radius: 1px;
-}
+
 
 .charts{
   border: 1px solid orange;
@@ -48,6 +35,21 @@
   }
   background: #FF9500;
 }
+}
+
+.btn{
+  color: #fff;
+  width: 290px;
+  height: 55px;
+  display: inline-block;
+  max-width: 100%;
+  padding: 16px 25px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-weight: 600;
+  font-size: 100%;
+  color: #fff;
+  border-radius: 1px;
 }
 
 .app-header {

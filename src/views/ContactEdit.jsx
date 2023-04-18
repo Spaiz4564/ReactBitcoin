@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { contactService } from '../services/contactService'
+import { contactService } from '../services/contact.service'
 
 
 export default class ContactEdit extends Component {

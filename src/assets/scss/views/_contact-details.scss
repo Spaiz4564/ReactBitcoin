@@ -2,11 +2,9 @@
     padding: 10px 20px 20px 20px;
     max-width: 400px;
     border-radius: 8px;
-    margin: auto;
   display: flex;
   gap: 15px;
   flex-direction: column;
-  margin-top: 100px;
   border: 1px solid  #f7951e;
   text-align: center;
   img {
@@ -19,6 +17,14 @@
     height: 30px;
     width: 80px;
   }
+}
+
+.contact-details-container{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
 }
 
 .filter-add-contact{

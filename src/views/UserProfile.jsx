@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import { userService } from '../services/userService'
+import { userService } from '../services/user.service'
 import { bitCoinService } from '../services/bitCoinService'
+import { MovesList } from '../cmps/MovesList'
 
 export class UserProfile extends Component {
   state = {
@@ -8,8 +9,8 @@ export class UserProfile extends Component {
     coins: null,
   }
 
-  componentDidMount() {
-    const loggedInUser = userService.getUser()
+  async componentDidMount() {
+    const loggedInUser = await userService.getUser()
     this.setState({ loggedInUser })
     this.getCoins(loggedInUser.coins)
   }
@@ -20,12 +21,15 @@ export class UserProfile extends Component {
     })
   }
 
+  get Moves() {
+return 
+  }
+
   render() {
     const { loggedInUser, coins } = this.state
     if (!loggedInUser) return <div>Loading...</div>
     return (
       <>
-        <h1 className='my-profile'>My Profile</h1>
         <section className='user-profile'>
           <h1>Hello {loggedInUser.name}!</h1>
           <h2>Coins: {loggedInUser.coins}</h2>
@@ -33,6 +37,7 @@ export class UserProfile extends Component {
             <img src={require(`../assets/imgs/currency.png`)} alt='' />
             BTC: {coins}
           </h3>
+          <MovesList  />
         </section>
       </>
     )

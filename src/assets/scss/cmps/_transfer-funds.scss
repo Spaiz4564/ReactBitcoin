@@ -1,0 +1,21 @@
+.transfer-funds {
+  label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+  }
+  width: 33%;
+  flex-direction: column;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  border: 1px solid orange;
+  height: 350px;
+  h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+}

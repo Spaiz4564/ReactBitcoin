@@ -1,0 +1,23 @@
+.sign-up{
+    width: 50%;
+    margin: 20px auto;
+    flex-direction: column;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    border: 1px solid orange;
+    height: 400px;
+    h1{
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}

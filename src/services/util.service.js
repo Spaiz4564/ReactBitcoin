@@ -7,3 +7,9 @@ export function makeId(length = 5) {
     }
     return text;
 }
+
+export function makeDate() {
+    return `${new Date()
+      .toISOString()
+      .slice(0, 10)} ${new Date().toLocaleTimeString()}`
+  }

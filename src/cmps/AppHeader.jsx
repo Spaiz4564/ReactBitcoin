@@ -13,6 +13,7 @@ export function _AppHeader() {
           <NavLink exact to='/'>
             Home
           </NavLink>
+          <NavLink to='/signup'>Sign up</NavLink>
           <NavLink to='/contacts'>Contacts</NavLink>
           <NavLink to='/statistics'>Chart</NavLink>
           <NavLink to='/profile'>

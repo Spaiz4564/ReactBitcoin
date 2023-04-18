@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export function ContactPreview({ contact, onRemoveContact }) {
-  const imgUrl = `https://robohash.org/${contact._id}`
+  const imgUrl = `https://robohash.org/${contact._id}?set=set5`
   return (
     <article className='contact-preview'>
       <Link to={`/contact/${contact._id}`}>
