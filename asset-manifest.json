@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/ReactBitcoin/static/css/main.f69c0750.css",
-    "main.js": "/ReactBitcoin/static/js/main.c516e6a6.js",
+    "main.css": "/ReactBitcoin/static/css/main.132802f2.css",
+    "main.js": "/ReactBitcoin/static/js/main.054a1a59.js",
     "static/js/787.b2303b4c.chunk.js": "/ReactBitcoin/static/js/787.b2303b4c.chunk.js",
     "static/media/overview-bg.png": "/ReactBitcoin/static/media/overview-bg.8edc8a45613ef399dc9f.png",
     "static/media/currency.png": "/ReactBitcoin/static/media/currency.3287eb6d896676d933c6.png",
     "static/media/profile.webp": "/ReactBitcoin/static/media/profile.c80f9f3d2a32092cb544.webp",
     "index.html": "/ReactBitcoin/index.html",
-    "main.f69c0750.css.map": "/ReactBitcoin/static/css/main.f69c0750.css.map",
-    "main.c516e6a6.js.map": "/ReactBitcoin/static/js/main.c516e6a6.js.map",
+    "main.132802f2.css.map": "/ReactBitcoin/static/css/main.132802f2.css.map",
+    "main.054a1a59.js.map": "/ReactBitcoin/static/js/main.054a1a59.js.map",
     "787.b2303b4c.chunk.js.map": "/ReactBitcoin/static/js/787.b2303b4c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f69c0750.css",
-    "static/js/main.c516e6a6.js"
+    "static/css/main.132802f2.css",
+    "static/js/main.054a1a59.js"
   ]
 }
